@@ -11,6 +11,7 @@ import { StoreFrontProductsNavComponent } from './store-front-products-nav/store
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { StoreFrontCarouselComponent } from './store-front-carousel/store-front-carousel.component';
 import { StoreFrontFeaturedComponent } from './store-front-featured/store-front-featured.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { StoreFrontFeaturedComponent } from './store-front-featured/store-front-
     StoreFrontProductsNavComponent,
     StoreFrontCarouselComponent,
     StoreFrontFeaturedComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
