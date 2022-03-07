@@ -10,6 +10,7 @@ import { StoreFrontProductsNavComponent } from './store-front-products-nav/store
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { StoreFrontCarouselComponent } from './store-front-carousel/store-front-carousel.component';
+import { StoreFrontFeaturedComponent } from './store-front-featured/store-front-featured.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { StoreFrontCarouselComponent } from './store-front-carousel/store-front-
     StoreFrontNavComponent,
     StoreFrontProductsNavComponent,
     StoreFrontCarouselComponent,
+    StoreFrontFeaturedComponent,
   ],
   imports: [
     BrowserModule,
