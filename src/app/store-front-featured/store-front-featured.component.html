@@ -1,8 +1,14 @@
 <div class="container mt-2">
   <div class="row">
-    <div class="col-3">
-      <div class="card" *ngFor="let product of featuredProducts">
-        {{ product.name }}
+    <div class="col-3" *ngFor="let product of featuredProducts">
+      <div class="card">
+        <h5>
+          {{ product.name }}
+        </h5>
+        <p>{{ product.description }}</p>
+        <p>
+          <strong>{{ product.price | currency }}</strong>
+        </p>
       </div>
     </div>
   </div>
