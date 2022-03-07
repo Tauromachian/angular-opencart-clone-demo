@@ -8,19 +8,24 @@ import { StoreFrontComponent } from './store-front/store-front.component';
 import { StoreFrontNavComponent } from './store-front-nav/store-front-nav.component';
 import { StoreFrontProductsNavComponent } from './store-front-products-nav/store-front-products-nav.component';
 
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { StoreFrontCarouselComponent } from './store-front-carousel/store-front-carousel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     StoreFrontComponent,
     StoreFrontNavComponent,
-    StoreFrontProductsNavComponent
+    StoreFrontProductsNavComponent,
+    StoreFrontCarouselComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
