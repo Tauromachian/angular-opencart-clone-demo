@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreFrontComponent } from './store-front/store-front.component';
 import { StoreFrontNavComponent } from './store-front-nav/store-front-nav.component';
+import { StoreFrontProductsNavComponent } from './store-front-products-nav/store-front-products-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreFrontComponent,
-    StoreFrontNavComponent
+    StoreFrontNavComponent,
+    StoreFrontProductsNavComponent
   ],
   imports: [
     BrowserModule,
