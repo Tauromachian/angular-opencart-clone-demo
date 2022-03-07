@@ -5,3 +5,8 @@
 
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+:root {
+  --primary-color: #7fb800;
+  --accent: #84085b;
+}
