@@ -13,6 +13,7 @@ import { StoreFrontCarouselComponent } from './store-front-carousel/store-front-
 import { StoreFrontFeaturedComponent } from './store-front-featured/store-front-featured.component';
 import { FooterComponent } from './footer/footer.component';
 import { ViewCartComponent } from './view-cart/view-cart.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ViewCartComponent } from './view-cart/view-cart.component';
     StoreFrontFeaturedComponent,
     FooterComponent,
     ViewCartComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
