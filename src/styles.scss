@@ -10,6 +10,8 @@ $theme-colors: (
 
 @import "~bootstrap/scss/bootstrap";
 
+@import "~@mdi/font/css/materialdesignicons.css";
+
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 :root {
