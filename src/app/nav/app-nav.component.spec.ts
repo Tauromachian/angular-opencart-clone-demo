@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StoreFrontNavComponent } from './store-front-nav.component';
+import { StoreFrontNavComponent } from './app-nav.component';
 
 describe('StoreFrontNavComponent', () => {
   let component: StoreFrontNavComponent;
@@ -8,9 +8,8 @@ describe('StoreFrontNavComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StoreFrontNavComponent ]
-    })
-    .compileComponents();
+      declarations: [StoreFrontNavComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
