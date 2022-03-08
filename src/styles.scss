@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-$primary: #7fb800;
-$accent: #84085b;
+$primary: #e4d59e;
+$secondary: #fefdfd;
+$accent: #a5462c;
+$dark: #151515;
 $theme-colors: (
   "primary": $primary,
   "accent": $accent,
@@ -15,6 +17,6 @@ $theme-colors: (
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 :root {
-  --primary-color: #7fb800;
-  --accent: #84085b;
+  --primary-color: #e4d59e;
+  --accent: #a5462c;
 }
