@@ -26,33 +26,7 @@
           <h2>There is nothing in your shopping cart</h2>
         </div>
       </app-base-card>
-      <h3 class="mt-2">Some products you may want to consider</h3>
-      <div class="col-3" *ngFor="let product of featuredProducts">
-        <app-base-card>
-          <div class="card-body">
-            <h5>
-              <strong>
-                {{ product.name }}
-              </strong>
-            </h5>
-            <p>{{ product.description }}</p>
-            <p>
-              <strong>{{ product.price | currency }}</strong>
-            </p>
-            <div class="d-flex">
-              <button
-                class="btn btn-accent"
-                (click)="cartService.setProduct(product)"
-              >
-                <span class="mdi mdi-cart"> </span>Add to cart
-              </button>
-              <button class="btn btn-outline-accent ms-1">
-                <span class="mdi mdi-eye"> </span>
-              </button>
-            </div>
-          </div>
-        </app-base-card>
-      </div>
+      <app-store-front-featured> </app-store-front-featured>
     </ng-template>
   </div>
 </div>
