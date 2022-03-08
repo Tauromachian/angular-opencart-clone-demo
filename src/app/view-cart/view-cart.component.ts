@@ -14,7 +14,7 @@ export class ViewCartComponent implements OnInit {
   featuredProducts: Product[] = [];
 
   constructor(
-    private cartService: CartService,
+    public cartService: CartService,
     private productService: ProductService
   ) {}
 
