@@ -2,7 +2,7 @@
   <div class="row">
     <h2>Featured products</h2>
     <div class="col-3" *ngFor="let product of featuredProducts">
-      <div class="card bg-primary">
+      <app-base-card>
         <div class="card-body">
           <h5>
             <strong>
@@ -22,7 +22,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </app-base-card>
     </div>
   </div>
 </div>
