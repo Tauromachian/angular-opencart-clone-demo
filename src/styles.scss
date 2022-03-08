@@ -5,9 +5,12 @@ $primary: #e4d59e;
 $secondary: #fefdfd;
 $accent: #a5462c;
 $dark: #151515;
+$light: #f8f9fa;
 $theme-colors: (
   "primary": $primary,
   "accent": $accent,
+  "light": $light,
+  "dark": $dark,
 );
 
 @import "~bootstrap/scss/bootstrap";
