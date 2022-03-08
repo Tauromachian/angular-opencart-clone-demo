@@ -21,3 +21,7 @@ $theme-colors: (
   --secondary-color: #fefdfd;
   --accent: #a5462c;
 }
+
+body {
+  background-color: $secondary;
+}
