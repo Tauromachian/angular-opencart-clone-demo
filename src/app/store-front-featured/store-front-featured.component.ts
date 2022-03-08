@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Product } from '../product';
 import { ProductService } from '../product.service';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-store-front-featured',
@@ -11,7 +12,10 @@ import { ProductService } from '../product.service';
 export class StoreFrontFeaturedComponent implements OnInit {
   featuredProducts: Product[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(
+    private productService: ProductService,
+    public cartService: CartService
+  ) {}
 
   ngOnInit(): void {
     this.setProducts();
