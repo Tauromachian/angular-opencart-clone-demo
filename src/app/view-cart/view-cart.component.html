@@ -4,7 +4,7 @@
       <h1>Cart</h1>
     </div>
     <div *ngIf="cartProducts.length; else noCartProducts">
-      <div class="col-12" *ngFor="let product of cartProducts">
+      <div class="col-12 mt-2" *ngFor="let product of cartProducts">
         <app-base-card>
           <div class="card-body">
             <h5>
