@@ -14,7 +14,10 @@
             <strong>{{ product.price | currency }}</strong>
           </p>
           <div class="d-flex">
-            <button class="btn btn-accent">
+            <button
+              class="btn btn-accent"
+              (click)="cartService.setProduct(product)"
+            >
               <span class="mdi mdi-cart"> </span>Add to cart
             </button>
             <button class="btn btn-outline-accent ms-1">
