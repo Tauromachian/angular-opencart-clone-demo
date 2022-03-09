@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 // auth routes
 import { AuthComponent } from './app-auth/auth/auth.component';
 import { ViewLoginComponent } from './app-auth/view-login/view-login.component';
+import { ViewRegisterComponent } from './app-auth/view-register/view-register.component';
 
 const routes: Routes = [
   { path: '', component: StoreFrontComponent },
@@ -15,7 +16,10 @@ const routes: Routes = [
   {
     path: 'auth',
     component: AuthComponent,
-    children: [{ path: '', component: ViewLoginComponent }],
+    children: [
+      { path: '', component: ViewLoginComponent },
+      { path: 'register', component: ViewRegisterComponent },
+    ],
   },
   { path: '**', component: PageNotFoundComponent },
 ];
