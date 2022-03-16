@@ -19,4 +19,8 @@ export class ProductService {
   getFeaturedProducts(): Product[] {
     return FEATURED_PRODUCTS;
   }
+
+  setSelectedProduct(newProduct: Product): void {
+    this.selectedProduct = newProduct;
+  }
 }
