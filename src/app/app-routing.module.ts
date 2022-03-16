@@ -9,10 +9,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AuthComponent } from './app-auth/auth/auth.component';
 import { ViewLoginComponent } from './app-auth/view-login/view-login.component';
 import { ViewRegisterComponent } from './app-auth/view-register/view-register.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 const routes: Routes = [
   { path: '', component: StoreFrontComponent },
   { path: 'cart', component: ViewCartComponent },
+  { path: 'product-detail', component: ProductDetailComponent },
   {
     path: 'auth',
     component: AuthComponent,
