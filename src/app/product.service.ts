@@ -7,6 +7,13 @@ import { FEATURED_PRODUCTS } from './mock-products';
   providedIn: 'root',
 })
 export class ProductService {
+  selectedProduct: Product = {
+    id: '',
+    name: '',
+    description: '',
+    price: '',
+  };
+
   constructor() {}
 
   getFeaturedProducts(): Product[] {
