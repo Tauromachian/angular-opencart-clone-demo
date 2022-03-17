@@ -49,8 +49,10 @@
             routerLink="/cart"
             aria-current="page"
             href="#"
-            >Cart</a
           >
+            <span class="mdi mdi-cart"></span> -
+            {{ cartService.accumulatedPrice | currency }}
+          </a>
         </li>
       </ul>
     </div>
