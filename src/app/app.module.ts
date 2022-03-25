@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BaseCardComponent } from './base-card/base-card.component';
 
 import { AppAuthModule } from "./app-auth/app-auth.module";
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AppAuthModule } from "./app-auth/app-auth.module";
     ViewCartComponent,
     PageNotFoundComponent,
     BaseCardComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
