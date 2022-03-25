@@ -1,0 +1,23 @@
+<div class="container">
+  <app-base-card>
+    <div class="card-body">
+      <h5>
+        <strong>
+          {{ product.name }}
+        </strong>
+      </h5>
+      <p>{{ product.description }}</p>
+      <p>
+        <strong>{{ product.price | currency }}</strong>
+      </p>
+      <div class="d-flex">
+        <button
+          class="btn btn-accent"
+          (click)="cartService.setProduct(product)"
+        >
+          <span class="mdi mdi-cart"> </span>Add to cart
+        </button>
+      </div>
+    </div>
+  </app-base-card>
+</div>
