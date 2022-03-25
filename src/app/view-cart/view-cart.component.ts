@@ -30,4 +30,8 @@ export class ViewCartComponent implements OnInit {
   getFeaturedProducts(): void {
     this.featuredProducts = this.productService.getFeaturedProducts();
   }
+
+  removeProductFromCart(index: number): void {
+    this.cartService.deleteProduct(index);
+  }
 }
