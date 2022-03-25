@@ -2,12 +2,13 @@
 
 /* Importing Bootstrap SCSS file. */
 $primary: #e4d59e;
+$primary-darken: #d0b75d;
 $secondary: #fefdfd;
 $accent: #a5462c;
 $dark: #151515;
 $light: #f8f9fa;
 $theme-colors: (
-  "primary": $primary,
+  "primary": $primary-darken,
   "accent": $accent,
   "light": $light,
   "dark": $dark,
@@ -21,15 +22,20 @@ $theme-colors: (
 
 :root {
   --primary-color: #e4d59e;
+  --primary-color-darken: #d0b75d;
   --secondary-color: #fefdfd;
   --accent: #a5462c;
 }
 
 body {
-  font-family: 'hind madurai', 'serif';
-  background-color: $secondary;
+  font-family: "hind madurai", "serif";
+  background-color: $primary;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'montserrat', 'sans-serif';
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "montserrat", "sans-serif";
 }
