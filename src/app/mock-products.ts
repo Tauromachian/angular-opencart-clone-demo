@@ -7,6 +7,7 @@ export const FEATURED_PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '220',
     stock: 14,
+    category: 'manga',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const FEATURED_PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '201',
     stock: 127,
+    category: 'manga',
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ export const FEATURED_PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '30',
     stock: 117,
+    category: 'manga',
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ export const FEATURED_PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '22',
     stock: 7,
+    category: 'manga',
   },
 ];
 
@@ -38,6 +42,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '23',
     stock: 16,
+    category: 'manga',
   },
   {
     id: 2,
@@ -45,6 +50,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '40',
     stock: 14,
+    category: 'manga',
   },
   {
     id: 3,
@@ -52,6 +58,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '31',
     stock: 128,
+    category: 'manga',
   },
   {
     id: 4,
@@ -59,6 +66,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '59',
     stock: 118,
+    category: 'manga',
   },
   {
     id: 5,
@@ -66,6 +74,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '80',
     stock: 18,
+    category: 'manga',
   },
   {
     id: 6,
@@ -73,6 +82,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '30',
     stock: 8,
+    category: 'manga',
   },
   {
     id: 7,
@@ -80,6 +90,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '450',
     stock: 1,
+    category: 'manga',
   },
   {
     id: 8,
@@ -87,6 +98,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '30',
     stock: 2,
+    category: 'manga',
   },
   {
     id: 9,
@@ -94,6 +106,7 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '45',
     stock: 28,
+    category: 'manga',
   },
   {
     id: 10,
@@ -101,5 +114,6 @@ export const PRODUCTS: Product[] = [
     description: 'Lorem ipsum',
     price: '80',
     stock: 8,
+    category: 'manga',
   },
 ];

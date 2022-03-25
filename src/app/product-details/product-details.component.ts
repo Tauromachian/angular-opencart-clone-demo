@@ -19,6 +19,7 @@ export class ProductDetailsComponent implements OnInit {
     name: '',
     price: '',
     stock: 0,
+    category: '',
   };
 
   constructor(
