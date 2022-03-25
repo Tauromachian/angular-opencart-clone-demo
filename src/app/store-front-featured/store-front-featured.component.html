@@ -20,7 +20,10 @@
             >
               <span class="mdi mdi-cart"> </span>Add to cart
             </button>
-            <button class="btn btn-outline-accent ms-1">
+            <button
+              [routerLink]="['product-details', product.id]"
+              class="btn btn-outline-accent ms-1"
+            >
               <span class="mdi mdi-eye"> </span>
             </button>
           </div>
