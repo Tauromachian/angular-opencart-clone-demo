@@ -28,6 +28,14 @@
               <span class="mdi mdi-delete"></span>
             </button>
           </div>
+          <div class="card-body d-flex flex-column">
+            <hr />
+            <p>Amount of items: {{ cartProduct.amount }}</p>
+            <p>
+              Amount of items:
+              {{ cartProduct.product.price * cartProduct.amount | currency }}
+            </p>
+          </div>
         </app-base-card>
       </div>
     </div>
