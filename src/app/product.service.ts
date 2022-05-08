@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-import { Product } from './product';
-import { FEATURED_PRODUCTS } from './mock-products';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ProductService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
-  getFeaturedProducts(): Product[] {
-    return FEATURED_PRODUCTS;
+  getFeaturedProducts(): Observable<any> {
+    return this.http.get('api/products');
   }
 }
