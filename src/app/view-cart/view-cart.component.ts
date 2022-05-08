@@ -28,7 +28,9 @@ export class ViewCartComponent implements OnInit {
   }
 
   getFeaturedProducts(): void {
-    this.featuredProducts = this.productService.getFeaturedProducts();
+    this.productService
+      .getFeaturedProducts()
+      .subscribe({ next: (products) => (this.featuredProducts = products) });
   }
 
   removeProductFromCart(index: number): void {

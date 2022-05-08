@@ -36,9 +36,13 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   findProduct(productId: number) {
+    this.productService
+      .getFeaturedProducts()
+      .subscribe({ next: (products) => this.setProduct(products, productId) });
+  }
+
+  setProduct(products: Product[], productId: number) {
     this.product =
-      this.productService
-        .getFeaturedProducts()
-        .find((product) => product.id === productId) ?? this.product;
+      products.find((product) => product.id === productId) ?? this.product;
   }
 }

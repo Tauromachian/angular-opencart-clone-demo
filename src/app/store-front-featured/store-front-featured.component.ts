@@ -18,10 +18,21 @@ export class StoreFrontFeaturedComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.setProducts();
+    this.getProducts();
   }
 
-  setProducts() {
-    this.featuredProducts = this.productService.getFeaturedProducts();
+  getProducts() {
+    this.productService.getFeaturedProducts().subscribe({
+      next: (response) => this.setProducts(response.data),
+      error: this.error,
+    });
+  }
+
+  setProducts(products: Product[]) {
+    this.featuredProducts = products;
+  }
+
+  error(error: any) {
+    console.log(error);
   }
 }
