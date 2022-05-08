@@ -29,7 +29,7 @@ export class StoreFrontFeaturedComponent implements OnInit {
   }
 
   setProducts(products: Product[]) {
-    this.featuredProducts = products;
+    this.featuredProducts = products.slice(0, 4);
   }
 
   error(error: any) {
