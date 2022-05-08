@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Product } from '../product';
+import { CartProduct } from '../cart-product';
 import { CartService } from '../cart.service';
 import { ProductService } from '../product.service';
 
@@ -10,7 +11,7 @@ import { ProductService } from '../product.service';
   styleUrls: ['./view-cart.component.scss'],
 })
 export class ViewCartComponent implements OnInit {
-  cartProducts: Product[] = [];
+  cartProducts: CartProduct[] = [];
   featuredProducts: Product[] = [];
 
   constructor(
