@@ -35,7 +35,7 @@ export class CartService {
   }
 
   deleteProduct(index: number) {
-    this.products.splice(index, 1);
+    this.cartProducts.splice(index, 1);
     this.recalculatePrice();
   }
 
