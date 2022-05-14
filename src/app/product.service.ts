@@ -12,4 +12,9 @@ export class ProductService {
   getFeaturedProducts(): Observable<any> {
     return this.http.get('api/products');
   }
+
+  getProductsBySearch(searchText: string): Observable<any> {
+    const url = `api/products?search=${searchText}`;
+    return this.http.get(url);
+  }
 }
