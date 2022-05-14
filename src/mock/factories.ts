@@ -17,7 +17,13 @@ export const factories = {
       return randomNumber(0, 10);
     },
     category(i) {
-      return randomPick(['manga', 'anime', 'action figure']);
+      return randomPick([
+        'manga',
+        'anime',
+        'action figure',
+        'cloth',
+        'pendants',
+      ]);
     },
   }),
 };
