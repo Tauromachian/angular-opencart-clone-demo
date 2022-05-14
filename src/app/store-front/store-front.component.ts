@@ -15,4 +15,8 @@ export class StoreFrontComponent implements OnInit {
   constructor(public cartService: CartService, private router: Router) {}
 
   ngOnInit(): void {}
+
+  gotToSearchView(): void {
+    this.router.navigate(['/search', { searchText: this.searchText }]);
+  }
 }
