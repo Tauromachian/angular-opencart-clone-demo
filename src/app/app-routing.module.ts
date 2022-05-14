@@ -5,6 +5,7 @@ import { StoreFrontComponent } from './store-front/store-front.component';
 import { ViewCartComponent } from './view-cart/view-cart.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 // auth routes
 import { AuthComponent } from './app-auth/auth/auth.component';
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: '', component: StoreFrontComponent },
   { path: 'cart', component: ViewCartComponent },
   { path: 'product-details/:productId', component: ProductDetailsComponent },
+  { path: 'search/:searchText', component: SearchResultComponent },
   {
     path: 'auth',
     component: AuthComponent,
