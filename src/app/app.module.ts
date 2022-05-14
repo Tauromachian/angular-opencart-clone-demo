@@ -20,6 +20,7 @@ import { BaseCardComponent } from './base-card/base-card.component';
 
 import { AppAuthModule } from "./app-auth/app-auth.module";
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { SearchResultComponent } from './search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     PageNotFoundComponent,
     BaseCardComponent,
     ProductDetailsComponent,
+    SearchResultComponent,
   ],
   imports: [
     BrowserModule,
