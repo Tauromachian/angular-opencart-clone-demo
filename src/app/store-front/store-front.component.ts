@@ -8,7 +8,9 @@ import { CartService } from '../cart.service';
   styleUrls: ['./store-front.component.scss'],
 })
 export class StoreFrontComponent implements OnInit {
-  constructor(public cartService: CartService) {}
+  searchText: string = '';
+
+  constructor(public cartService: CartService, private router: Router) {}
 
   ngOnInit(): void {}
 }
