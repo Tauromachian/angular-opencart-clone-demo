@@ -11,7 +11,13 @@
           aria-label="Search"
           [value]="searchText"
         />
-        <button class="btn btn-outline-accent" type="submit">Search</button>
+        <button
+          class="btn btn-outline-accent"
+          type="submit"
+          (click)="goToSearchView()"
+        >
+          Search
+        </button>
       </form>
 
       <button class="btn btn-accent ms-2 px-5">

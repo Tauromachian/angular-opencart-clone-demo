@@ -16,7 +16,7 @@ export class StoreFrontComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  gotToSearchView(): void {
+  goToSearchView(): void {
     this.router.navigate(['/search', { searchText: this.searchText }]);
   }
 }
